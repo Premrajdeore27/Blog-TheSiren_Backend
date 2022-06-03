@@ -4,7 +4,7 @@ const {GetHomePageData , categoryControl , idControl} = require("../controllers/
 
 const homerouter=express.Router();
 
-homerouter.get("/home",GetHomePageData);
+homerouter.get("/",GetHomePageData);
 homerouter.get("/category",categoryControl);
 homerouter.get("/article/:id",idControl);
 module.exports = homerouter;
